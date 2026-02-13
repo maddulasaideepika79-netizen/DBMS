@@ -1,0 +1,11 @@
+declare
+VAR1 NUMBER; 
+VAR2 NUMBER; 
+BEGIN 
+dbms_output.put_line('Enter number to print multiplication table'); 
+VAR1:=:VAR1; 
+FOR VAR2 IN 1..20 LOOP 
+DBMS_OUTPUT.PUT_LINE(VAR1||'X'||VAR2||'='||VAR1*VAR2); 
+END LOOP; 
+END; 
+/ 
